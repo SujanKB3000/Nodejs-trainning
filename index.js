@@ -6,9 +6,19 @@
 // const pi=3.14;
 // console.log(pi);
 
-let x=10;
-if(true){
-    let x=20;
-    console.log("Inside",x);
-}
-console.log("Outside",x);
+
+// console.log("Start");
+// setTimeout(()=>{
+//     console.log("This prints after 2 seconds");
+// },2000);
+// console.log("End");
+
+//guess the output
+let num=1;
+setTimeout(()=>{
+    num=5;
+},10);
+setTimeout(()=>{
+    console.log("A:",num);
+},0);
+console.log("B:",num);
