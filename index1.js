@@ -11,13 +11,25 @@
 // },100);
 
 
-console.log("A");
-setTimeout(()=>{
-    console.log("B");
-},0);
-setTimeout(()=>{
-    console.log("C");
-},10);
-setTimeout(()=>{
-    console.log("D");
-},50);
+// console.log("A");
+// setTimeout(()=>{
+//     console.log("B");
+// },0);
+// setTimeout(()=>{
+//     console.log("C");
+// },10);
+// setTimeout(()=>{
+//     console.log("D");
+// },50);
+
+
+//CALL BACK
+
+function greet(name,callback){
+    console.log("Hello," +name);
+    callback();
+}
+function askQuestion(){
+    console.log("How are you?");
+}
+greet("User",askQuestion);
